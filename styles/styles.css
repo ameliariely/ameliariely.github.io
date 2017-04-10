@@ -1,0 +1,91 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  height: 101%;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  padding: 40px;
+  margin: 50px auto;
+}
+a {
+  color: black;
+  border-bottom: 2px solid #fff;
+}
+a,
+a:hover,
+a:active,
+a:visited {
+  outline: 0px;
+}
+a:hover {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+}
+img {
+  outline: 0;
+  border: 0;
+}
+
+/* first for IE 4–8 */
+@font-face {
+  font-family: BauWeb-Bold;
+  src: url("../fonts/BauWeb-Bold.eot");
+}
+
+/* then for WOFF-capable browsers */
+@font-face {
+  font-family: BauWeb-Bold;
+  src: url("../fonts/BauWeb-Bold.woff") format("woff");
+}
+
+h1, h2, h3, h4 {
+    font-family: BauWeb-Bold, Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 28px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 24px;
+  margin-bottom: 21px;
+}
+h3 {
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+p, ul {
+  font-family: "Fedra Serif B Book", georgia, Serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+p em, ul em {
+  font-family: "Fedra Serif B Book Italic";
+  font-style: italic;
+  font-weight: normal;
+}
+li {
+  list-style: none;
+}
+section.content {
+  margin-top: 40px;
+}
+header h1 a {
+	border-bottom: 0px;
+}
+section.content {
+	margin-top: 0px;
+}
+h2 {
+	margin-bottom: 0;
+}
+/* inspired by styles for Randy Hunt's personal site */
