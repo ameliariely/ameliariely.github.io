@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Minesweeper Riely</title>
+	<link type="text/css" rel="stylesheet" href="styles.css">
+	<script src="http://www.cs.unc.edu/Courses/comp426-f14/jquery-1.11.1.js"></script>
+	<script src="script.js"></script>
+</head>
+
+<body>
+    <div id="formdiv">
+    	<form id="sizeform" name="size">
+    	Enter a height between 10 and 30: <input type="text" name="h" value ="10"><br>
+    	Enter a width between 10 and 40: <input type="text" name="w" value="10"><br>
+    	Enter a number of mines no less than 1 and no more than size-1: <input type="text" name="n" value="10"><br>
+   		<input type="submit" value="Make a new minefield!"><br>
+        Right click to plant or remove a flag.
+    	</form>
+    	<div id="sizeerr"></div>
+    </div>
+    <div id= "info">
+    <h2 id="rem"></h2>
+    </div>
+    <div id="game"></div>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+td{
+	background-color: grey;
+    border: thin solid black;
+    height: 20px;
+    width: 20px;
+    background-size: 20px 20px;
+    font-weight: bold;
+}
+
+table{
+	background-color: black;
+}
+
+.clicked{
+	background-color: yellow;
+}
+
+.mine{
+	background-image: url(http://www.clipartlord.com/wp-content/uploads/2013/04/bomb.png);
+}
+
+.flagged{
+	background-color: green;
+	background-image: url(http://flaggedmailsapp.com/images/flag.png);
+}
+
+.flaggedMine{
+	background-color: green;
+	background-image: url(http://www.clipartlord.com/wp-content/uploads/2013/04/bomb.png);
+}
+
+.theMine{
+	background-image: url(http://www.clipartlord.com/wp-content/uploads/2013/04/bomb.png);
+	background-color: red;
+}
