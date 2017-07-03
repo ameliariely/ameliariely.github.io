@@ -31,8 +31,10 @@ $("document").ready(function () {
             $("#sizeerr").append("Invalid value for number of mines. Adjusted to " + n +".<br>");
         }
 
+        //create game
         makeGame(h, w, n);
 
+    //triage right vs left clicks
     clk = $("#game").on('mousedown', 'td', function(event) {
         switch (event.which) {
             case 1: //left click
@@ -44,6 +46,7 @@ $("document").ready(function () {
             }
         });
 
+    //prevent the context menu on right click
     prevent = $("#game").on("contextmenu", function(event){
         event.preventDefault();
         });
@@ -56,22 +59,22 @@ var makeGame = function (h, w, n) {
     var i, j, game, id;
     mines = new Array(w*h);
 
-    //make minefield grid string to append
+    //make minefield grid string to append to html
     game = '<table>\n';
     for (i = 0; i < h; i++) {
         game += '<tr>\n';
         for (j = 0; j < w; j++) {
             id = i*w+j;
             game += '<td id="' + id + '"> </td>\n';
-            mines[id] = new spot(id, false, false, false, 0);
+            mines[id] = new Spot(id, false, false, false, 0);
         }
         game += '</tr>\n';
     }
 
-    //append string
+    //add the mindfield table as html
     $("#game").html(game);
 
-
+    //function to pass to the neighbors function
     function addMine(x) {
             if(mines[x].mine === false){
                 mines[x].nearmines++;
@@ -92,11 +95,11 @@ var makeGame = function (h, w, n) {
         neighbors(id, addMine);
     }
 
-$("#rem").html( "Mines remaining: " + n);
-return mines;
+	$("#rem").html( "Mines remaining: " + n);
 };
 
-function spot (id, mine, flagged, revealed, nearmines) {
+//spot prototype
+function Spot (id, mine, flagged, revealed, nearmines) {
     this.id = id;
     this.mine = mine;
     this.flagged = flagged;
@@ -118,12 +121,13 @@ function spot (id, mine, flagged, revealed, nearmines) {
 
 function left (td) {
     var s = mines[td.id];
+    //can't click it if it's flagged
     if (!s.flagged){
-            if(s.mine){
+            if (s.mine) {
                 explode(td.id);
-            } else if(s.revealed){
+            } else if (s.revealed) {
                 revealCheck(s, td.id);
-            }else{
+            } else {
                 revealRecursive(td.id);
             }
     }
@@ -139,6 +143,7 @@ function revealCheck(s, id){
             }
         });
     }
+     $("#rem").html( "revealCheck" );
 }
 
 function right (td){
@@ -156,27 +161,31 @@ function explode (id) {
             else{
                 $("#"+i).addClass( "mine" );}
         }
-    $("#"+id).removeClass( "mine" ).addClass( "theMine" );}
+    }
+    //mark the mine you clicked as special
+    $("#"+id).removeClass( "mine" ).addClass( "theMine" );
     $("#game").off("mousedown");
     $("#rem").html("GAME OVER");
 }
 
-function revealRecursive (id){
+function revealRecursive (id) {
     var aSpot = mines[id];
-    if(!aSpot.revealed && !aSpot.flagged){
-        if(aSpot.nearmines === 0){
+    if (!aSpot.revealed && !aSpot.flagged) {
+        if(aSpot.nearmines === 0) {
             aSpot.revealed = true;
             numCleared++;
             neighbors(id, revealRecursive);
             $("#"+id).addClass( "clicked" );
-        }else if(aSpot.nearmines > 0){
+        } else if(aSpot.nearmines > 0) {
             $("#"+id).addClass( "clicked" );
             $("#"+id).html( aSpot.nearmines );
             aSpot.revealed = true;
             numCleared++;
         }
     }
-    if (numCleared==h*w-n){win();};
+    if (numCleared==h*w-n) {
+    	win();
+	};
 }
 
 function nearflagged (id) {
@@ -186,6 +195,7 @@ function nearflagged (id) {
     return near;
     }
 
+//the adding is used for finding nearFlagged
 function neighbors(id, f){
     id = parseInt(id);
     //if something is returned
@@ -217,6 +227,7 @@ function neighbors(id, f){
 }
 
 function win(){
+	//remove event handlers
     $("#game").off("mousedown");
     $("#rem").html("YOU WON!!");
 }
