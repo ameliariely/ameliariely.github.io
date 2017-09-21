@@ -143,7 +143,6 @@ function revealCheck(s, id){
             }
         });
     }
-     $("#rem").html( "revealCheck" );
 }
 
 function right (td){
