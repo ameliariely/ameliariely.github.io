@@ -6,6 +6,7 @@ var numeri = [];
 function setup() {
   fullscreen();
 	createNumeri();
+  textAlign(CENTER);
 }
 
 function draw() {
@@ -72,5 +73,5 @@ function stampaEstratti() {
 			string += '\n';
 		}
 	}
-	text(string, 30, 330);
+	text(string, 200, 330);
 }
