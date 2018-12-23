@@ -5,7 +5,7 @@ var numeri = [];
 var enrico;
 
 function preload() {
-	enrico = loadImage("/assets/enrico.png");
+	enrico = loadImage("https://avatars1.githubusercontent.com/u/6432915?s=60&v=4");
 }
 
 function setup() {
@@ -89,5 +89,5 @@ function stampaEstratti() {
 			string += '\n';
 		}
 	}
-	text(string, windowWidth/2, windowHeight-80);
+	text(string, windowWidth/2, windowHeight-10);
 }
