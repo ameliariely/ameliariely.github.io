@@ -12,13 +12,13 @@ function setup() {
 function draw() {
 	if (i >= 0) {
 		fill(i, 255-i, 0);
-		ellipse(random()*300+30, random()*300+30, 25, 25);
+		ellipse(random() * windowWidth, random() * windowHeight, 25, 25);
 		i++;
 		if (i == 300) {
 			clear();
 			fill(0);
 			textSize(100);
-			text(estrai(), 200, 200);
+			text(estrai(), windowWidth/2, windowHeight/2);
 			textSize(15);
 			stampaEstratti();
 			i = -1;
@@ -78,5 +78,5 @@ function stampaEstratti() {
 			string += '\n';
 		}
 	}
-	text(string, 200, 330);
+	text(string, windowWidth/2, windowHeight-80);
 }
