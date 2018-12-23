@@ -30,7 +30,6 @@ function draw() {
 			fill(0);
 			textSize(100);
 			text(estrai(), windowWidth/2, windowHeight/2);
-			textSize(15);
 			stampaEstratti();
 			i = -1;
 		}
@@ -89,5 +88,6 @@ function stampaEstratti() {
 			string += '\n';
 		}
 	}
-	text(string, windowWidth/2, windowHeight-10);
+  textSize(20);
+	text(string, windowWidth/2, windowHeight-100);
 }
