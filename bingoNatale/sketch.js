@@ -4,7 +4,7 @@ var estratti = [];
 var numeri = [];
 
 function setup() {
-  fullscreen();
+  createCanvas(windowWidth, windowHeight);
 	createNumeri();
   textAlign(CENTER);
 }
@@ -24,6 +24,10 @@ function draw() {
 			i = -1;
 		}
 	}
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
 
 function keyPressed() {
