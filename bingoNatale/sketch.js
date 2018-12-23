@@ -26,8 +26,20 @@ function draw() {
 }
 
 function keyPressed() {
-	i = 0;
-	clear();
+	nuovoNumero();
+}
+
+function mouseClicked() {
+  nuovoNumero();
+}
+
+function touchStarted() {
+  nuovoNumero();
+}
+
+function nuovoNumero() {
+  i = 0;
+  clear();
 }
 
 function estrai() {
