@@ -2,6 +2,11 @@ var x;
 var i = -1;
 var estratti = [];
 var numeri = [];
+var enrico;
+
+function preload() {
+  enrico = loadImage("assets/enrico.png");
+}
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -12,6 +17,7 @@ function setup() {
 function draw() {
 	if (i >= 0) {
 		fill(i, 255-i, 0);
+    image(enrico, random() * windowWidth, random() * windowHeight);
 		ellipse(random() * windowWidth, random() * windowHeight, 25, 25);
     ellipse(random() * windowWidth, random() * windowHeight, 25, 25);
 		ellipse(random() * windowWidth, random() * windowHeight, 25, 25);
