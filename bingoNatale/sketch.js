@@ -47,6 +47,7 @@ function deviceShaken() {
 }
 
 function nuovoNumero() {
+  fullscreen();
   i = 0;
   clear();
 }
