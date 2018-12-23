@@ -2,11 +2,6 @@ var x;
 var i = -1;
 var estratti = [];
 var numeri = [];
-var enrico;
-
-function preload() {
-	// enrico = loadImage("https://ibb.co/gz0hZtC");
-}
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -23,7 +18,6 @@ function draw() {
     ellipse(random() * windowWidth, random() * windowHeight, 25, 25);
     ellipse(random() * windowWidth, random() * windowHeight, 25, 25);
     ellipse(random() * windowWidth, random() * windowHeight, 25, 25);
-		image(enrico, random() * windowWidth, random() * windowHeight);
 		i++;
 		if (i == 300) {
 			clear();
