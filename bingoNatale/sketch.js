@@ -5,7 +5,7 @@ var numeri = [];
 var enrico;
 
 function preload() {
-	enrico = loadImage("assets/enrico.png");
+	enrico = loadImage("https://ibb.co/gz0hZtC");
 }
 
 function setup() {
