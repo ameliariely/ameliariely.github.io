@@ -15,6 +15,11 @@ function draw() {
 		ellipse(random() * windowWidth, random() * windowHeight, 25, 25);
     ellipse(random() * windowWidth, random() * windowHeight, 25, 25);
 		ellipse(random() * windowWidth, random() * windowHeight, 25, 25);
+    ellipse(random() * windowWidth, random() * windowHeight, 25, 25);
+    ellipse(random() * windowWidth, random() * windowHeight, 25, 25);
+    ellipse(random() * windowWidth, random() * windowHeight, 25, 25);
+    ellipse(random() * windowWidth, random() * windowHeight, 25, 25);
+    ellipse(random() * windowWidth, random() * windowHeight, 25, 25);
 		i++;
 		if (i == 300) {
 			clear();
