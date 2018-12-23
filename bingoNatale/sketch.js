@@ -5,7 +5,7 @@ var numeri = [];
 var enrico;
 
 function preload() {
-  enrico = loadImage("assets/enrico.png");
+  enrico = loadImage("http://www.computing.es/siteresources/files/124/30.jpg");
 }
 
 function setup() {
