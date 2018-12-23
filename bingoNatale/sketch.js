@@ -4,7 +4,7 @@ var estratti = [];
 var numeri = [];
 
 function setup() {
-  createCanvas(400, 400);
+  fullscreen();
 	createNumeri();
 }
 
