@@ -37,6 +37,10 @@ function touchStarted() {
   nuovoNumero();
 }
 
+function deviceShaken() {
+  nuovoNumero();
+}
+
 function nuovoNumero() {
   i = 0;
   clear();
