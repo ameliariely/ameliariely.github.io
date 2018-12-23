@@ -5,7 +5,7 @@ var numeri = [];
 var enrico;
 
 function preload() {
-	// enrico = loadImage("https://avatars1.githubusercontent.com/u/6432915?s=60&v=4");
+	enrico = loadImage("assets/enrico.png");
 }
 
 function setup() {
