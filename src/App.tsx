@@ -1,6 +1,6 @@
 import './App.css';
 import video from './assets/videos/gorge.mp4';
-import React, { useRef, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 
 function AutoPlaySilentVideo(props: { video: string; }) {
   const videoRef = useRef<HTMLVideoElement | null>(null);
