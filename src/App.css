@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.App {
+  position: relative; /* Allow absolute positioning of children */
+  height: 100vh; /* Full height */
+  width: 100vw; /* Full width */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+h1 {
+  position: absolute; /* Position over the Hydra background */
+  color: #7D766C; /* Text color */
+  font-size: 4rem; /* Adjust font size as needed */
+  text-align: center; /* Center text */
+  z-index: 1; /* Ensure text is above the background */
+  margin: 0; /* Remove default margin */
+  font-family: Futura;
+  font-weight: 400;
+}
