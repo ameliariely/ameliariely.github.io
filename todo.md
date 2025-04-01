@@ -1,0 +1,3 @@
+- [x] replace favicon
+- [x] add new github pages IPs to namecheap
+- [ ] 

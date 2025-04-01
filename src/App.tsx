@@ -1,5 +1,5 @@
 import './App.css';
-import video from './videos/gorge.mp4';
+import video from './assets/videos/gorge.mp4';
 
 function App() {
   return (
