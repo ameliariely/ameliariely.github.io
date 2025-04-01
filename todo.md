@@ -1,0 +1,2 @@
+- [ ] disallow scrolling on phone
+- [ ] better crop on phone?
