@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ameliariely.github.io/static/css/main.a2edf67d.css",
-    "main.js": "/ameliariely.github.io/static/js/main.6d70e6bf.js",
-    "static/js/453.e72c0867.chunk.js": "/ameliariely.github.io/static/js/453.e72c0867.chunk.js",
-    "static/media/gorge.mp4": "/ameliariely.github.io/static/media/gorge.107fe9f286ce4941c1c1.mp4",
-    "index.html": "/ameliariely.github.io/index.html",
-    "main.a2edf67d.css.map": "/ameliariely.github.io/static/css/main.a2edf67d.css.map",
-    "main.6d70e6bf.js.map": "/ameliariely.github.io/static/js/main.6d70e6bf.js.map",
-    "453.e72c0867.chunk.js.map": "/ameliariely.github.io/static/js/453.e72c0867.chunk.js.map"
+    "main.css": "/static/css/main.a2edf67d.css",
+    "main.js": "/static/js/main.3e547bcb.js",
+    "static/js/453.e72c0867.chunk.js": "/static/js/453.e72c0867.chunk.js",
+    "static/media/gorge.mp4": "/static/media/gorge.107fe9f286ce4941c1c1.mp4",
+    "index.html": "/index.html",
+    "main.a2edf67d.css.map": "/static/css/main.a2edf67d.css.map",
+    "main.3e547bcb.js.map": "/static/js/main.3e547bcb.js.map",
+    "453.e72c0867.chunk.js.map": "/static/js/453.e72c0867.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a2edf67d.css",
-    "static/js/main.6d70e6bf.js"
+    "static/js/main.3e547bcb.js"
   ]
 }
