@@ -1,3 +1,4 @@
 - [ ] disallow scrolling on phone
 - [ ] better crop on phone?
 - [ ] show a hydra synth on phone
+- [ ] set up email

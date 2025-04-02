@@ -29,10 +29,8 @@ function App() {
       <div className="landing-content">
         <h1>Amelia Riely</h1>
         <nav className="nav-links">
-          <a href="#work">Work</a>
-          <a href="#exhibitions">Exhibitions</a>
-          <a href="#about">About</a>
-          <a href="mailto:hey@ameliariely.com">Contact</a>
+          <a href="https://www.linkedin.com/in/amelia-riely-8a9017a1/">LinkedIn</a>
+          <a href="https://github.com/ameliariely">Github</a>
         </nav>
       </div>
     </div>

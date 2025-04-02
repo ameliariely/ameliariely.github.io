@@ -8,17 +8,24 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  position: absolute;
   display: flex;
+  position: absolute;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
 .landing-content {
+  height: 100%;
+  width: 100%;
   z-index: 1;
   font-family: Futura;
   color: #7D766C;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
