@@ -1,24 +1,61 @@
 body {
   margin: 0;
-  overflow: hidden; /* Prevent scrolling */
+  overflow: hidden;
 }
 
 .App {
-  position: relative; /* Allow absolute positioning of children */
-  height: 100vh; /* Full height */
-  width: 100vw; /* Full width */
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.landing-content {
+  z-index: 1;
+  font-family: Futura;
+  color: #7D766C;
 }
 
 h1 {
-  position: absolute; /* Position over the Hydra background */
-  color: #7D766C; /* Text color */
-  font-size: 4rem; /* Adjust font size as needed */
-  text-align: center; /* Center text */
-  z-index: 1; /* Ensure text is above the background */
-  margin: 0; /* Remove default margin */
-  font-family: Futura;
+  font-size: 4rem;
+  text-align: center;
+  margin: 0;
   font-weight: 400;
+}
+
+.background-video {
+  z-index: 0;
+  position: absolute;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 10px;
+  z-index: 1;
+}
+
+.nav-links a {
+  color: #7D766C;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #815E61;
+}
+
+@media (max-width: 600px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
